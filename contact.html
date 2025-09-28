@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Teammo Agritech Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .contact-hero {
+            background: var(--gradient-hero);
+            color: var(--white);
+            padding: 120px 0 60px;
+            text-align: center;
+        }
+
+        .contact-hero h1 {
+            font-size: var(--font-size-4xl);
+            font-weight: 700;
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .contact-hero p {
+            font-size: var(--font-size-xl);
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-methods {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-2xl);
+            margin-bottom: var(--spacing-3xl);
+        }
+
+        .contact-method {
+            background: var(--white);
+            padding: var(--spacing-2xl);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-lg);
+            text-align: center;
+            transition: var(--transition-base);
+        }
+
+        .contact-method:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .contact-method i {
+            font-size: var(--font-size-3xl);
+            color: var(--primary-color);
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .contact-method h3 {
+            font-size: var(--font-size-xl);
+            margin-bottom: var(--spacing-md);
+            color: var(--text-dark);
+        }
+
+        .contact-method p {
+            color: var(--text-medium);
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .contact-method a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact-method a:hover {
+            color: var(--primary-dark);
+        }
+
+        .detailed-form {
+            background: var(--light-gray);
+            padding: var(--spacing-2xl);
+            border-radius: var(--radius-lg);
+            margin-bottom: var(--spacing-3xl);
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-lg);
+        }
+
+        .office-map {
+            background: var(--white);
+            padding: var(--spacing-2xl);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+        }
+
+        .map-placeholder {
+            background: var(--medium-gray);
+            height: 300px;
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-medium);
+            font-size: var(--font-size-lg);
+        }
+
+        @media (max-width: 768px) {
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-hero h1 {
+                font-size: var(--font-size-3xl);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-seedling"></i>
+                <span>Teammo Agritech Solutions</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="index.html#about" class="nav-link">About</a>
+                <a href="index.html#projects" class="nav-link">Projects</a>
+                <a href="index.html#services" class="nav-link">Services</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+        <div class="container">
+            <h1>Contact Teammo Agritech Solutions</h1>
+            <p>Ready to transform your agricultural operations? We're here to help you succeed with cutting-edge
+                technology solutions.</p>
+        </div>
+    </section>
+
+    <!-- Contact Methods -->
+    <section style="padding: var(--spacing-3xl) 0;">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Choose the best way to reach us - we're always ready to help</p>
+            </div>
+
+            <div class="contact-methods">
+                <div class="contact-method">
+                    <i class="fas fa-phone-alt"></i>
+                    <h3>Call Us</h3>
+                    <p>Speak directly with our agricultural technology experts</p>
+                    <div>
+                        <strong>Main Office:</strong><br>
+                        <a href="tel:+917498017600">+91 74980 17600</a>
+                    </div>
+                    <div style="margin-top: var(--spacing-md);">
+                        <strong>WhatsApp:</strong><br>
+                        <a href="https://wa.me/917498017600" target="_blank">+91 74980 17600</a>
+                    </div>
+                </div>
+
+                <div class="contact-method">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email Us</h3>
+                    <p>Send us detailed information about your project requirements</p>
+                    <div>
+                        <strong>General Inquiries:</strong><br>
+                        <a href="mailto:teammo.and.co@gmail.com">teammo.and.co@gmail.com</a>
+                    </div>
+                    <div style="margin-top: var(--spacing-md);">
+                        <strong>Support:</strong><br>
+                        <a href="mailto:teammo.and.co@gmail.com">teammo.and.co@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="contact-method">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>Schedule a Demo</h3>
+                    <p>Book a personalized demonstration of our solutions</p>
+                    <div>
+                        <strong>Available Times:</strong><br>
+                        Monday - Friday: 9:00 AM - 5:00 PM<br>
+                        Saturday: 10:00 AM - 2:00 PM
+                    </div>
+                    <div style="margin-top: var(--spacing-md);">
+                        <a href="#detailed-form"
+                            style="background: var(--primary-color); color: var(--white); padding: var(--spacing-sm) var(--spacing-lg); border-radius: var(--radius-md); text-decoration: none; display: inline-block;">Book
+                            Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Contact Form -->
+    <section style="padding: var(--spacing-3xl) 0; background: var(--light-gray);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Tell Us About Your Project</h2>
+                <p>Fill out this detailed form and we'll get back to you within 24 hours</p>
+            </div>
+
+            <div class="detailed-form" id="detailed-form">
+                <form id="detailed-contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="first-name"
+                                style="display: block; margin-bottom: var(--spacing-sm); font-weight: 600; color: var(--text-dark);">First
+                                Name *</label>
+                            <input type="text" id="first-name" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name"
+                                style="display: block; margin-bottom: var(--spacing-sm); font-weight: 600; color: var(--text-dark);">Last
+                                Name *</label>
+                            <input type="text" id="last-name" name="lastName" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email-detailed"
+                                style="display: block; margin-bottom: var(--spacing-sm); font-weight: 600; color: var(--text-dark);">Email
+                                Address *</label>
+                            <input type="email" id="email-detailed" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone-detailed"
+                                style="display: block; margin-bottom: var(--spacing-sm); font-weight: 600; color: var(--text-dark);">Phone
+                                Number</label>
+                            <input type="tel" id="phone-detailed" name="phone">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="company"
+                            style="display: block; margin-bottom: var(--spacing-sm); font-weight: 600; color: var(--text-dark);">Company/Organization</label>
+                        <input type="text" id="company" name="company">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="service-type"
+                                style="display: block; margin-bottom: var(--spacing-sm); font-weight: 600; color: var(--text-dark);">Service
+                                Interest *</label>
+                            <select id="service-type" name="serviceType" required>
+                                <option value="">Select a service...</option>
+                                <option value="custom-development">Custom Software Development</option>
+                                <option value="mobile-app">Mobile Applications</option>
+                                <option value="cloud-solutions">Cloud Solutions</option>
+                                <option value="system-integration">System Integration</option>
+                                <option value="erp-solution">ERP Solutions (like Agri-ERP)</option>
+                                <option value="team-management">Team Management (like Teammo)</option>
+                                <option value="consulting">Technology Consulting</option>
+                                <option value="support">Support & Maintenance</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="budget-range"
+                                style="display: block; margin-bottom: var(--spacing-sm); font-weight: 600; color: var(--text-dark);">Budget
+                                Range</label>
+                            <select id="budget-range" name="budgetRange">
+                                <option value="">Select budget range...</option>
+                                <option value="under-10k">Under $10,000</option>
+                                <option value="10k-25k">$10,000 - $25,000</option>
+                                <option value="25k-50k">$25,000 - $50,000</option>
+                                <option value="50k-100k">$50,000 - $100,000</option>
+                                <option value="over-100k">Over $100,000</option>
+                                <option value="discuss">Prefer to discuss</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="timeline"
+                            style="display: block; margin-bottom: var(--spacing-sm); font-weight: 600; color: var(--text-dark);">Project
+                            Timeline</label>
+                        <select id="timeline" name="timeline">
+                            <option value="">Select timeline...</option>
+                            <option value="asap">As soon as possible</option>
+                            <option value="1-3-months">1-3 months</option>
+                            <option value="3-6-months">3-6 months</option>
+                            <option value="6-12-months">6-12 months</option>
+                            <option value="over-1-year">Over 1 year</option>
+                            <option value="flexible">Flexible</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="current-challenges"
+                            style="display: block; margin-bottom: var(--spacing-sm); font-weight: 600; color: var(--text-dark);">Current
+                            Challenges</label>
+                        <textarea id="current-challenges" name="challenges" rows="4"
+                            placeholder="What challenges are you currently facing in your agricultural operations?"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="project-details"
+                            style="display: block; margin-bottom: var(--spacing-sm); font-weight: 600; color: var(--text-dark);">Project
+                            Details *</label>
+                        <textarea id="project-details" name="projectDetails" rows="6"
+                            placeholder="Please provide detailed information about your project requirements, goals, and any specific features you need..."
+                            required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="existing-systems"
+                            style="display: block; margin-bottom: var(--spacing-sm); font-weight: 600; color: var(--text-dark);">Existing
+                            Systems</label>
+                        <textarea id="existing-systems" name="existingSystems" rows="3"
+                            placeholder="Tell us about any existing software or systems you're currently using..."></textarea>
+                    </div>
+
+                    <div class="form-group" style="display: flex; align-items: center; gap: var(--spacing-sm);">
+                        <input type="checkbox" id="newsletter" name="newsletter" style="width: auto; margin: 0;">
+                        <label for="newsletter" style="margin: 0; font-weight: 400;">Subscribe to our newsletter for
+                            agricultural technology updates</label>
+                    </div>
+
+                    <div class="form-group" style="display: flex; align-items: center; gap: var(--spacing-sm);">
+                        <input type="checkbox" id="demo-request" name="demoRequest" style="width: auto; margin: 0;">
+                        <label for="demo-request" style="margin: 0; font-weight: 400;">I would like to schedule a
+                            personalized demo</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: var(--spacing-lg);">
+                        Send Detailed Inquiry
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Office Location & Map -->
+    <section style="padding: var(--spacing-3xl) 0;">
+        <div class="container">
+            <div class="section-header">
+                <h2>Visit Our Office</h2>
+                <p>Stop by our headquarters to meet our team and see our solutions in action</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-3xl); align-items: center;">
+                <div>
+                    <h3
+                        style="font-size: var(--font-size-2xl); color: var(--primary-color); margin-bottom: var(--spacing-lg);">
+                        Teammo Agritech Solutions Office</h3>
+
+                    <div class="contact-item" style="margin-bottom: var(--spacing-lg);">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p><a href="https://maps.google.com/?q=Sangli,Maharashtra,India" target="_blank"
+                                    style="text-decoration: none; color: inherit;">Sangli,
+                                    Maharashtra<br>India</a><br><br><a
+                                    href="https://maps.google.com/?q=Sangli,Maharashtra,India" target="_blank"
+                                    style="color: var(--primary-color); text-decoration: none;"><i
+                                        class="fas fa-map-marker-alt"></i> View on Google Maps</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item" style="margin-bottom: var(--spacing-lg);">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Office Hours</h4>
+                            <p>
+                                <strong>Monday - Friday:</strong> 8:00 AM - 6:00 PM<br>
+                                <strong>Saturday:</strong> 9:00 AM - 2:00 PM<br>
+                                <strong>Sunday:</strong> Closed
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-car"></i>
+                        <div>
+                            <h4>Parking</h4>
+                            <p>Free parking available in our building's parking garage. Visitor spots are located on
+                                Level 1.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="office-map">
+                    <div class="map-placeholder">
+                        <div style="text-align: center;">
+                            <i class="fas fa-map"
+                                style="font-size: var(--font-size-3xl); margin-bottom: var(--spacing-md); color: var(--primary-color);"></i>
+                            <p>Interactive Map</p>
+                            <p style="font-size: var(--font-size-sm); margin-top: var(--spacing-sm);">Click for
+                                directions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section style="padding: var(--spacing-3xl) 0; background: var(--light-gray);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Quick answers to common questions about our services</p>
+            </div>
+
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div class="faq-item"
+                    style="background: var(--white); margin-bottom: var(--spacing-lg); border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md);">
+                    <div class="faq-question"
+                        style="padding: var(--spacing-lg); cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-weight: 600; color: var(--text-dark);">
+                        <span>How long does a typical software development project take?</span>
+                        <i class="fas fa-chevron-down" style="color: var(--primary-color);"></i>
+                    </div>
+                    <div class="faq-answer"
+                        style="padding: 0 var(--spacing-lg) var(--spacing-lg); color: var(--text-medium); line-height: 1.6;">
+                        Project timelines vary based on complexity and requirements. Simple applications typically take
+                        2-4 months, while comprehensive ERP systems like Agri-ERP can take 6-12 months. We provide
+                        detailed timelines during our initial consultation.
+                    </div>
+                </div>
+
+                <div class="faq-item"
+                    style="background: var(--white); margin-bottom: var(--spacing-lg); border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md);">
+                    <div class="faq-question"
+                        style="padding: var(--spacing-lg); cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-weight: 600; color: var(--text-dark);">
+                        <span>Do you provide training and support after project completion?</span>
+                        <i class="fas fa-chevron-down" style="color: var(--primary-color);"></i>
+                    </div>
+                    <div class="faq-answer"
+                        style="padding: 0 var(--spacing-lg) var(--spacing-lg); color: var(--text-medium); line-height: 1.6; display: none;">
+                        Yes! We provide comprehensive training for all users and 24/7 technical support. Our support
+                        packages include regular system updates, bug fixes, and feature enhancements based on your
+                        evolving needs.
+                    </div>
+                </div>
+
+                <div class="faq-item"
+                    style="background: var(--white); margin-bottom: var(--spacing-lg); border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md);">
+                    <div class="faq-question"
+                        style="padding: var(--spacing-lg); cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-weight: 600; color: var(--text-dark);">
+                        <span>Can you integrate with our existing farm management systems?</span>
+                        <i class="fas fa-chevron-down" style="color: var(--primary-color);"></i>
+                    </div>
+                    <div class="faq-answer"
+                        style="padding: 0 var(--spacing-lg) var(--spacing-lg); color: var(--text-medium); line-height: 1.6; display: none;">
+                        Absolutely. We specialize in system integration and can connect our solutions with most existing
+                        farm management software, IoT devices, and agricultural equipment. We conduct a thorough
+                        analysis of your current systems before proposing integration strategies.
+                    </div>
+                </div>
+
+                <div class="faq-item"
+                    style="background: var(--white); margin-bottom: var(--spacing-lg); border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md);">
+                    <div class="faq-question"
+                        style="padding: var(--spacing-lg); cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-weight: 600; color: var(--text-dark);">
+                        <span>What makes your solutions suitable for middle-aged farmers?</span>
+                        <i class="fas fa-chevron-down" style="color: var(--primary-color);"></i>
+                    </div>
+                    <div class="faq-answer"
+                        style="padding: 0 var(--spacing-lg) var(--spacing-lg); color: var(--text-medium); line-height: 1.6; display: none;">
+                        We design our interfaces with simplicity and clarity in mind. Large, clear buttons, intuitive
+                        navigation, and comprehensive user guides ensure that farmers of all ages can effectively use
+                        our technology. We also provide extensive training and support to ensure smooth adoption.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-seedling"></i>
+                        <span>Teammo Agritech Solutions</span>
+                    </div>
+                    <p>Modernizing agriculture through innovative technology solutions.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#projects">Projects</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Our Solutions</h4>
+                    <ul>
+                        <li><a href="index.html#projects">Teammo</a></li>
+                        <li><a href="index.html#projects">Agri-ERP</a></li>
+                        <li><a href="#detailed-form">Request Demo</a></li>
+                        <li><a href="#detailed-form">Get Quote</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><a href="tel:+917498017600">+91 74980 17600</a></li>
+                        <li><a href="mailto:teammo.and.co@gmail.com">teammo.and.co@gmail.com</a></li>
+                        <li><a href="https://maps.google.com/?q=Sangli,Maharashtra,India" target="_blank">Sangli,
+                                Maharashtra</a></li>
+                        <li>India</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Teammo Agritech Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // FAQ functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', function () {
+                const answer = this.nextElementSibling;
+                const icon = this.querySelector('i');
+
+                if (answer.style.display === 'block') {
+                    answer.style.display = 'none';
+                    icon.classList.remove('fa-chevron-up');
+                    icon.classList.add('fa-chevron-down');
+                } else {
+                    // Close all other answers
+                    document.querySelectorAll('.faq-answer').forEach(a => a.style.display = 'none');
+                    document.querySelectorAll('.faq-question i').forEach(i => {
+                        i.classList.remove('fa-chevron-up');
+                        i.classList.add('fa-chevron-down');
+                    });
+
+                    answer.style.display = 'block';
+                    icon.classList.remove('fa-chevron-down');
+                    icon.classList.add('fa-chevron-up');
+                }
+            });
+        });
+
+        // Enhanced form handling for detailed form
+        document.getElementById('detailed-contact-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+            submitBtn.disabled = true;
+
+            // Simulate form submission
+            setTimeout(() => {
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+                this.reset();
+
+                // Show success message
+                const successMsg = document.createElement('div');
+                successMsg.style.cssText = `
+                    background: #4CAF50;
+                    color: white;
+                    padding: 1rem;
+                    border-radius: 8px;
+                    margin: 1rem 0;
+                    text-align: center;
+                `;
+                successMsg.innerHTML = '<i class="fas fa-check-circle"></i> Thank you! We\'ll contact you within 24 hours.';
+                this.insertBefore(successMsg, submitBtn);
+
+                setTimeout(() => successMsg.remove(), 5000);
+            }, 2000);
+        });
+    </script>
+</body>
+
+</html>
