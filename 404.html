@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found - Teammo Agritech Solutions</title>
+    <meta name="description"
+        content="The page you're looking for doesn't exist. Explore our agricultural technology solutions and services.">
+    <meta name="robots" content="noindex, follow">
+    <link rel="canonical" href="https://agritech.teammo.in/">
+    <link rel="icon" type="image/x-icon" href="assets/leaf.ico">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .error-container {
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .error-content {
+            max-width: 600px;
+        }
+
+        .error-code {
+            font-size: 6rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .error-title {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
+
+        .error-description {
+            font-size: 1.1rem;
+            color: var(--text-medium);
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .error-actions {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .useful-links {
+            margin-top: 3rem;
+            text-align: left;
+        }
+
+        .useful-links h3 {
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
+
+        .useful-links ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .useful-links li {
+            margin-bottom: 0.5rem;
+        }
+
+        .useful-links a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .useful-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="/"
+                    style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: var(--spacing-sm);">
+                    <i class="fas fa-seedling"></i>
+                    <span>Teammo Agritech Solutions</span>
+                </a>
+            </div>
+            <div class="nav-menu">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/#about" class="nav-link">About</a>
+                <a href="/#projects" class="nav-link">Projects</a>
+                <a href="/#services" class="nav-link">Services</a>
+                <a href="/blogs/" class="nav-link">Blog</a>
+                <a href="/#contact" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="error-container">
+        <div class="error-content">
+            <div class="error-code">404</div>
+            <h1 class="error-title">Page Not Found</h1>
+            <p class="error-description">
+                Oops! The page you're looking for doesn't exist. It might have been moved, deleted, or you entered the
+                wrong URL.
+            </p>
+
+            <div class="error-actions">
+                <a href="/" class="btn btn-primary">Go Home</a>
+                <a href="/blogs/" class="btn btn-secondary">View Blog</a>
+                <a href="/#contact" class="btn btn-secondary">Contact Us</a>
+            </div>
+
+            <div class="useful-links">
+                <h3>You might be looking for:</h3>
+                <ul>
+                    <li><a href="/#services">Our Agricultural Technology Services</a></li>
+                    <li><a href="/#projects">Our Successful Projects</a></li>
+                    <li><a href="/blogs/">Latest Agricultural Technology Articles</a></li>
+                    <li><a href="/#about">About Teammo Agritech Solutions</a></li>
+                    <li><a href="/#contact">Get in Touch with Our Team</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-seedling"></i>
+                        <span>Teammo Agritech Solutions</span>
+                    </div>
+                    <p>Modernizing agriculture through innovative technology solutions.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/#about">About</a></li>
+                        <li><a href="/#projects">Projects</a></li>
+                        <li><a href="/#services">Services</a></li>
+                        <li><a href="/blogs/">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="tel:+917498017600">+91 74980 17600</a></li>
+                        <li><a href="mailto:teammo.and.co@gmail.com">teammo.and.co@gmail.com</a></li>
+                        <li>Sangli, Maharashtra, India</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Teammo Agritech Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Track 404 errors for SEO insights
+        if (typeof gtag !== 'undefined') {
+            gtag('event', '404_error', {
+                'page_title': document.title,
+                'page_location': window.location.href,
+                'custom_map': {
+                    'dimension1': 'error_page'
+                }
+            });
+        }
+
+        // Optional: Suggest similar pages based on URL
+        document.addEventListener('DOMContentLoaded', function () {
+            const currentPath = window.location.pathname;
+            const suggestions = document.querySelector('.useful-links ul');
+
+            // Add contextual suggestions based on URL
+            if (currentPath.includes('blog')) {
+                const blogLink = document.createElement('li');
+                blogLink.innerHTML = '<a href="/blogs/">Explore Our Agriculture Blog</a>';
+                suggestions.insertBefore(blogLink, suggestions.firstChild);
+            }
+
+            if (currentPath.includes('service')) {
+                const serviceLink = document.createElement('li');
+                serviceLink.innerHTML = '<a href="/#services">View Our Technology Services</a>';
+                suggestions.insertBefore(serviceLink, suggestions.firstChild);
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Teammo Agritech Solutions | Latest Agricultural Technology Insights</title>
+    <link rel="icon" type="image/x-icon" href="../assets/leaf.ico">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="blog-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html"
+                    style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: var(--spacing-sm);">
+                    <i class="fas fa-seedling"></i>
+                    <span>Teammo Agritech Solutions</span>
+                </a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="../index.html#home" class="nav-link">Home</a>
+                <a href="../index.html#about" class="nav-link">About</a>
+                <a href="../index.html#projects" class="nav-link">Projects</a>
+                <a href="../index.html#services" class="nav-link">Services</a>
+                <a href="index.html" class="nav-link active">Blog</a>
+                <a href="../index.html#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Hero Section -->
+    <section class="blog-hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Agricultural Technology
+                    <span class="highlight">Insights & Innovations</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Stay updated with the latest trends, technologies, and best practices in modern agriculture.
+                    Discover how technology is revolutionizing farming worldwide.
+                </p>
+                <div class="blog-stats">
+                    <div class="stat-item">
+                        <strong id="total-articles">5</strong>
+                        <span>Articles</span>
+                    </div>
+                    <div class="stat-item">
+                        <strong>3</strong>
+                        <span>Categories</span>
+                    </div>
+                    <div class="stat-item">
+                        <strong>1000+</strong>
+                        <span>Readers</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Categories Filter -->
+    <section class="blog-filters">
+        <div class="container">
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-category="all">All Articles</button>
+                <button class="filter-btn" data-category="technology">Technology</button>
+                <button class="filter-btn" data-category="farming">Smart Farming</button>
+                <button class="filter-btn" data-category="sustainability">Sustainability</button>
+            </div>
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" id="blog-search" placeholder="Search articles...">
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Article -->
+    <section class="featured-article">
+        <div class="container">
+            <h2 class="section-title">Featured Article</h2>
+            <div class="featured-card" id="featured-article">
+                <!-- Featured article will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Articles Grid -->
+    <section class="blog-articles">
+        <div class="container">
+            <h2 class="section-title">Latest Articles</h2>
+            <div class="articles-grid" id="articles-grid">
+                <!-- Articles will be loaded here dynamically -->
+            </div>
+
+            <!-- Load More Button -->
+            <div class="load-more-container">
+                <button class="btn btn-primary" id="load-more-btn" style="display: none;">
+                    Load More Articles
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Subscription -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h3>Stay Updated</h3>
+                    <p>Get the latest agricultural technology insights delivered to your inbox weekly.</p>
+                </div>
+                <form class="newsletter-form" id="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-secondary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-seedling"></i>
+                        <span>Teammo Agritech Solutions</span>
+                    </div>
+                    <p>Modernizing agriculture through innovative technology solutions.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html#home">Home</a></li>
+                        <li><a href="../index.html#about">About</a></li>
+                        <li><a href="../index.html#projects">Projects</a></li>
+                        <li><a href="../index.html#services">Services</a></li>
+                        <li><a href="index.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Blog Categories</h4>
+                    <ul>
+                        <li><a href="#" data-category="technology">Technology</a></li>
+                        <li><a href="#" data-category="farming">Smart Farming</a></li>
+                        <li><a href="#" data-category="sustainability">Sustainability</a></li>
+                        <li><a href="#" data-category="all">All Articles</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="tel:+917498017600">+91 74980 17600</a></li>
+                        <li><a href="mailto:teammo.and.co@gmail.com">teammo.and.co@gmail.com</a></li>
+                        <li><a href="https://maps.google.com/?q=Sangli,Maharashtra,India" target="_blank">Sangli,
+                                Maharashtra</a></li>
+                        <li>India</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Teammo Agritech Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script src="blog-manager.js"></script>
+</body>
+
+</html>

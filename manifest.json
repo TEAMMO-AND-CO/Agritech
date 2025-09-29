@@ -1,0 +1,73 @@
+{
+  "name": "Teammo Agritech Solutions",
+  "short_name": "Teammo Agritech",
+  "description": "Leading agricultural technology company specializing in custom software development, mobile applications, and cloud solutions for modern farming.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2e7d32",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en",
+  "categories": ["business", "agriculture", "technology"],
+  "icons": [
+    {
+      "src": "assets/leaf.ico",
+      "sizes": "any",
+      "type": "image/x-icon",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "assets/screenshot-desktop.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "platform": "wide"
+    },
+    {
+      "src": "assets/screenshot-mobile.png",
+      "sizes": "750x1334",
+      "type": "image/png",
+      "platform": "narrow"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Our Services",
+      "short_name": "Services",
+      "description": "View our agricultural technology services",
+      "url": "/#services",
+      "icons": [
+        {
+          "src": "assets/leaf.ico",
+          "sizes": "any"
+        }
+      ]
+    },
+    {
+      "name": "Contact Us",
+      "short_name": "Contact",
+      "description": "Get in touch with our team",
+      "url": "/#contact",
+      "icons": [
+        {
+          "src": "assets/leaf.ico",
+          "sizes": "any"
+        }
+      ]
+    },
+    {
+      "name": "Blog",
+      "short_name": "Blog",
+      "description": "Read our latest agriculture technology articles",
+      "url": "/blogs/",
+      "icons": [
+        {
+          "src": "assets/leaf.ico",
+          "sizes": "any"
+        }
+      ]
+    }
+  ]
+}

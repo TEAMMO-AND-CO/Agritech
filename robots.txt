@@ -1,0 +1,58 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://agritech.teammo.in/sitemap.xml
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1
+
+# Allow important pages
+Allow: /blogs/
+Allow: /assets/
+Allow: /*.css
+Allow: /*.js
+Allow: /*.ico
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.webp
+Allow: /*.svg
+
+# Disallow any temporary, admin, or system files
+Disallow: /temp/
+Disallow: /backup/
+Disallow: /.git/
+Disallow: /node_modules/
+Disallow: /.env
+Disallow: /.htaccess
+Disallow: /logs/
+Disallow: /_private/
+Disallow: /admin/
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /*?*utm_source=
+Disallow: /*?*utm_medium=
+Disallow: /*?*utm_campaign=
+Disallow: /*?*utm_term=
+Disallow: /*?*utm_content=
+
+# Specific bot instructions
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Block bad bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
