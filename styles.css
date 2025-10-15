@@ -433,6 +433,70 @@ body {
   background: var(--light-gray);
 }
 
+/* Subtle background for About / farmers benefits section */
+.about.has-bg {
+  /* Prefer a local image if provided, otherwise fall back to an external stock image */
+  /* Darker overlay for better contrast */
+  background-color: rgba(6, 35, 12, 0.6);
+  background-image: linear-gradient(rgba(6, 35, 12, 0.6), rgba(6, 35, 12, 0.6)),
+    url("./assets/farmers-bg.jpg");
+  /* background-image: linear-gradient(
+      rgba(6, 35, 12, 0.55),
+      rgba(6, 35, 12, 0.55)
+    ),
+    url("https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3&s=3d3c8c5f3b6f2e8a5d6a1a9b2c3d4e5f"); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* Blend the overlay color with the image to reduce brightness */
+  background-blend-mode: multiply, normal;
+  color: var(--white);
+}
+
+.about.has-bg .about-text p,
+.about.has-bg .stat span,
+.about.has-bg .section-header p {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.about.has-bg .feature {
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--white);
+  box-shadow: none;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* Force high-contrast text styles inside the dark about background */
+.about.has-bg h2,
+.about.has-bg h3,
+.about.has-bg h4,
+.about.has-bg p,
+.about.has-bg li,
+.about.has-bg span,
+.about.has-bg strong,
+.about.has-bg em {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+/* Accent links in About to a warm tone that contrasts with dark overlay */
+.about.has-bg a {
+  color: var(--secondary-light);
+  text-decoration: underline;
+}
+
+.about.has-bg a:hover,
+.about.has-bg a:focus {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+/* Ensure enough padding on smaller screens */
+@media (max-width: 768px) {
+  .about.has-bg {
+    padding: calc(var(--spacing-3xl) + 2rem) 0;
+  }
+}
+
 .about-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -532,6 +596,19 @@ body {
   overflow: hidden;
 }
 
+/* Make anchor-wrapped project cards preserve styles and be fully clickable */
+.project-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-link .project-icon,
+.project-link h3,
+.project-link .project-description {
+  pointer-events: none; /* ensure the whole card link clicks, not inner elements */
+}
+
 .project-card::before {
   content: "";
   position: absolute;
@@ -545,6 +622,28 @@ body {
 .project-card:hover {
   transform: translateY(-10px);
   box-shadow: var(--shadow-xl);
+}
+
+/* Keep anchor-wrapped project cards visually interactive but prevent content expansion */
+.project-link:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-xl);
+}
+
+/* Clamp descriptions to 3 lines to avoid large pop-out on hover */
+.project-description {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Ensure hover doesn't change layout (no height changes) */
+.project-card,
+.project-link {
+  will-change: transform;
 }
 
 .project-icon {
